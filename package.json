@@ -1,0 +1,25 @@
+{
+  "name": "uber-clone",
+  "version": "1.0.0",
+  "description": "uber for x clone application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js"
+  },
+  "author": "",
+  "type": "module",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.4",
+    "express": "^4.18.2",
+    "mongoose": "^8.1.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.3"
+  },
+  "engines": {
+    "node": "20.9.0",
+    "npm": "10.1.0"
+  }
+}
