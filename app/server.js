@@ -8,7 +8,7 @@ const ServerSetup = async () => {
 
   // setup routers test one
   app.use('/', async (req, res, next) => {
-    res.send('Hello World');
+    res.send("Hello World");
   });
 
   // run the server on configured port 
