@@ -1,13 +1,24 @@
 import mongoose from "mongoose";
+import { SYSTEM_ROLES } from "../constants/index.js";
 
 const UserSchema = new mongoose.Schema({
+	role: {
+		type: String,
+		enum: SYSTEM_ROLES,
+		required: true,
+	},
 	username: {
 		type: String,
 		unique: true,
 		index: true,
 	},
 
-	displayName: {
+	firstName: {
+		type: String,
+		required: true,
+	},
+
+	lastName: {
 		type: String,
 	},
 
